@@ -19,12 +19,13 @@ class Leap {
 	}
 
 	function transitions(ttype, var, ttime) {
-		if (ttype == Transition.StartLayout || Transition.ToNewSelection || Transition.ToNewList) logic();
+		if (ttype == Transition.StartLayout || Transition.ToNewSelection || Transition.ToNewList) logic(var);
 	}
 
-	function logic() {
+	function logic(direction) {
 		if ((fe.filters[fe.list.filter_index].name != exception) && (fe.list.size == 0)) {
-	 		fe.signal("next_filter");
+	 		if (direction < 0) fe.signal("prev_filter");
+	 		else fe.signal("next_filter");
 		}
 	}
 }
