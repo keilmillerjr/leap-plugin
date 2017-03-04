@@ -19,7 +19,7 @@ class Leap {
 	}
 
 	function transitions(ttype, var, ttime) {
-		if (ttype == Transition.StartLayout || Transition.ToNewSelection || Transition.ToNewList) logic(var);
+		if ((ttype == Transition.StartLayout) || (ttype == Transition.ToNewSelection) || (ttype == Transition.ToNewList)) logic(var);
 	}
 
 	function logic(direction) {
