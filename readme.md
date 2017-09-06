@@ -4,7 +4,7 @@ by [Keil Miller Jr](http://keilmillerjr.com)
 
 ## DESCRIPTION:
 
-Leap plugin is for the [AttractMode](http://attractmode.org) front end. It helps to leap over empty filters.
+Leap plugin is for the [AttractMode](http://attractmode.org) front end. It helps to leap over empty filters. This is important for filters like favorites that might be empty at times, and cause issues with your layout.
 
 ## Paths
 
