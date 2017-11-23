@@ -9,7 +9,7 @@ class UserConfig </ help="A plugin that helps to leap over empty filters." /> {
 // Debug
 class Leap {
 	config = null;
-	exception = "";
+	exception = null;
 
 	constructor() {
 		config = fe.get_config();
