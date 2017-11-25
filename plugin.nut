@@ -1,7 +1,7 @@
 // Layout User Options
-class UserConfig </ help="A plugin that helps to leap over empty filters." /> {
+class UserConfig </ help="Plugin helps to leap over empty filters." /> {
 	</ label="Exception",
-		help="Leap plugin will not leap over this filter. This will prevent an infinite loop, should your romlist for the current display == 0..",
+		help="Plugin will not leap over this filter. This will prevent an infinite loop, should your romlist for the current display != 0. You must have a filter with roms in it.",
 		order=1 />
 	exception="All";
 }
@@ -12,8 +12,8 @@ class Leap {
 	exception = null;
 
 	constructor() {
-		config = fe.get_config();
-		exception =  config["exception"];
+		user_config = fe.get_config();
+		exception =  user_config["exception"];
 
 		fe.add_transition_callback(this, "transitions");
 	}
