@@ -8,7 +8,7 @@ class UserConfig </ help="Plugin helps to leap over empty filters." /> {
 
 // Debug
 class Leap {
-	config = null;
+	user_config = null;
 	exception = null;
 
 	constructor() {
