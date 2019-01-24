@@ -1,6 +1,6 @@
 # Leap plugin for AttractMode front end
 
-by [Keil Miller Jr](http://keilmillerjr.com)
+by [Keil Miller Jr](http://keilmiller.com)
 
 ## DESCRIPTION:
 
